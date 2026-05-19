@@ -1,0 +1,300 @@
+# Instincts generated from https://github.com/meamritanshu/Repo-Plus-main
+# Generated: 2026-05-19T14:43:47.535Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: Repo-Plus-main-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/meamritanshu/Repo-Plus-main
+---
+
+# Repo Plus Main Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: test
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: test: add unit tests for intensityToGutterColor and implement alpha clamping
+
+---
+id: Repo-Plus-main-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/meamritanshu/Repo-Plus-main
+---
+
+# Repo Plus Main Commit Length
+
+## Action
+
+Write moderate-length commit messages (~76 characters)
+
+## Evidence
+
+- Average commit message length: 76 chars
+- Based on 1 commits
+
+---
+id: Repo-Plus-main-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/meamritanshu/Repo-Plus-main
+---
+
+# Repo Plus Main Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: Repo-Plus-main-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/meamritanshu/Repo-Plus-main
+---
+
+# Repo Plus Main Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: Repo-Plus-main-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/meamritanshu/Repo-Plus-main
+---
+
+# Repo Plus Main Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: Repo-Plus-main-arch-type-based
+trigger: "when adding new code"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: https://github.com/meamritanshu/Repo-Plus-main
+---
+
+# Repo Plus Main Arch Type Based
+
+## Action
+
+Place code in the appropriate type folder (components/, services/, utils/, etc.)
+
+## Evidence
+
+- Type-based module organization detected
+- Folders: 
+
+---
+id: repo-plus-main-instinct-camelcase-files
+trigger: "When creating or renaming a file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: meamritanshu/Repo-Plus-main
+---
+
+# Repo Plus Main Instinct Camelcase Files
+
+## Action
+
+Use camelCase for the file name
+
+## Evidence
+
+- Pattern in namingConventions.files: camelCase
+
+---
+id: repo-plus-main-instinct-camelcase-functions
+trigger: "When defining a function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: meamritanshu/Repo-Plus-main
+---
+
+# Repo Plus Main Instinct Camelcase Functions
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: repo-plus-main-instinct-pascalcase-classes
+trigger: "When defining a class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: meamritanshu/Repo-Plus-main
+---
+
+# Repo Plus Main Instinct Pascalcase Classes
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: repo-plus-main-instinct-screaming-constants
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: meamritanshu/Repo-Plus-main
+---
+
+# Repo Plus Main Instinct Screaming Constants
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: repo-plus-main-instinct-relative-imports
+trigger: "When importing a module"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: meamritanshu/Repo-Plus-main
+---
+
+# Repo Plus Main Instinct Relative Imports
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: repo-plus-main-instinct-named-exports
+trigger: "When exporting a function, class, or constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: meamritanshu/Repo-Plus-main
+---
+
+# Repo Plus Main Instinct Named Exports
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: repo-plus-main-instinct-test-prefix-commits
+trigger: "When committing test-related changes"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: meamritanshu/Repo-Plus-main
+---
+
+# Repo Plus Main Instinct Test Prefix Commits
+
+## Action
+
+Prefix the commit message with 'test:'
+
+## Evidence
+
+- Seen in commit: test: add unit tests for intensityToGutterColor and implement alpha clamping
+- Pattern in commits.prefixes: test
+
+---
+id: repo-plus-main-instinct-conventional-commits
+trigger: "When writing a commit message"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: meamritanshu/Repo-Plus-main
+---
+
+# Repo Plus Main Instinct Conventional Commits
+
+## Action
+
+Follow the conventional commit format: <type>: <description>
+
+## Evidence
+
+- Pattern in commits.type: conventional
+- Seen in commit: test: add unit tests for intensityToGutterColor and implement alpha clamping
+
+---
+id: repo-plus-main-instinct-test-location-mixed
+trigger: "When adding new tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: meamritanshu/Repo-Plus-main
+---
+
+# Repo Plus Main Instinct Test Location Mixed
+
+## Action
+
+Place test files in the same folder as the code or in a mixed location, not in a dedicated test directory
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation: mixed
+
