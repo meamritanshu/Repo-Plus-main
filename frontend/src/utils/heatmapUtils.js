@@ -19,9 +19,17 @@ export function intensityToColor(intensity) {
  */
 export function intensityToGutterColor(intensity) {
     if (intensity <= 0) return "transparent";
-    if (intensity < 0.35) return `rgba(34, 197, 94, ${(0.3 + intensity * 0.4).toFixed(3)})`;
-    if (intensity < 0.65) return `rgba(245, 158, 11, ${(0.5 + intensity * 0.4).toFixed(3)})`;
-    return `rgba(239, 68, 68, ${(0.7 + intensity * 0.3).toFixed(3)})`;
+    let alpha;
+    if (intensity < 0.35) {
+        alpha = 0.3 + intensity * 0.4;
+        return `rgba(34, 197, 94, ${Math.min(alpha, 1.0).toFixed(3)})`;
+    }
+    if (intensity < 0.65) {
+        alpha = 0.5 + intensity * 0.4;
+        return `rgba(245, 158, 11, ${Math.min(alpha, 1.0).toFixed(3)})`;
+    }
+    alpha = 0.7 + intensity * 0.3;
+    return `rgba(239, 68, 68, ${Math.min(alpha, 1.0).toFixed(3)})`;
 }
 
 /**
